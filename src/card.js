@@ -2,10 +2,10 @@ import React from 'react';
 
 function Card(props){
     return (
-        <div key={this.props.STORE.allcards.id} class="Card">
+        <div key={props.cardData.id} class="Card">
             <button type="button">delete</button>
-            <h3>{this.props.STORE.allCards.title}</h3>
-            <p>{this.props.STORE.allCards.content}</p>
+            <h3>{props.cardData.title}</h3>
+            <p>{props.cardData.content}</p>
         </div>
     )
 }
