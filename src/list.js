@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from './card';
+import './styles/list.css';
 
 function List (props){
-    console.log(`ids : ${props.list.cardIds}`);
     return (
         <section className="List">
             <header className="List-cards">
@@ -10,7 +10,6 @@ function List (props){
             </header>
             <div className="List-cards">
             {props.list.cardIds.map(key => {
-                console.log(`id ${key}`);
                 return <Card cardData={props.allCards[key]} />;
             })}
             </div>
