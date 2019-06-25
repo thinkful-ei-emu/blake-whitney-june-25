@@ -3,7 +3,7 @@ import './styles/card.css';
 
 function Card(props){
     return (
-        <div key={props.cardData.id} class="Card">
+        <div key={props.cardData.id} className="Card">
             <button type="button">delete</button>
             <h3>{props.cardData.title}</h3>
             <p>{props.cardData.content}</p>
